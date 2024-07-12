@@ -2054,8 +2054,8 @@ int rcdaq_init( const int snumber, pthread_mutex_t &M)
   outfile_fd = 0;
 
   // we give the buffers our state variable
-  Buffer1.setMD5State(&md5state);
-  Buffer2.setMD5State(&md5state);
+  // Buffer1.setMD5State(&md5state);
+  // Buffer2.setMD5State(&md5state);
   
   fillBuffer = &Buffer1;
   transportBuffer = &Buffer2;
