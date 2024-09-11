@@ -558,7 +558,7 @@ int daqBuffer::compress ()
       else if ( wants_compression == 2)
 	{
 	  // result = lzo1c_999_compress( (lzo_byte *) bptr,
-	  result = lzo1b_5_compress( (lzo_byte *) bptr,
+	  result = lzo1b_99_compress( (lzo_byte *) bptr,
 			      in_len,  
 			      (lzo_byte *)&outputarray[4],
 			      &outputlength_in_bytes,wrkmem);
