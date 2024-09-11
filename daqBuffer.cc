@@ -508,7 +508,8 @@ int daqBuffer::setCompression(const int flag)
       if ( !wrkmem)
 	{
 	  //	  wrkmem = (lzo_bytep) lzo_malloc(LZO1X_1_12_MEM_COMPRESS);
-	  int memsize=LZO1X_999_MEM_COMPRESS;
+	  // int memsize=LZO1X_999_MEM_COMPRESS;
+	  int memsize=LZO1B_99_MEM_COMPRESS;
 	  //int memsize=LZO1X_1_15_MEM_COMPRESS;
 	  wrkmem = (lzo_bytep) lzo_malloc(memsize);
 	  if (wrkmem)
